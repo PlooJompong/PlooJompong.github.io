@@ -1,13 +1,72 @@
 /* reset */
-
-*,
-*::before,
-*::after {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Glory", sans-serif;
+  background-color: rgba(244, 173, 97, 0.5);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 h1 {
-  color: tomato;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  margin: auto;
+  text-align: center;
+  font-size: 6.5rem;
+  color: white;
+}
+
+form input,
+form button {
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  background: white;
+  padding: 10px;
+}
+
+form input {
+  width: 30%;
+}
+
+form button {
+  background-color: white;
+  color: rgba(244, 173, 97, 1);
+}
+
+form button:hover {
+  cursor: pointer;
+  background-color: rgba(244, 173, 97, 1);
+  color: white;
+}
+
+ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+li {
+  padding-left: 10px;
+  width: 33%;
+  margin-top: 20px;
+  list-style: none;
+  font-size: 3rem;
+  background-color: white;
 }
