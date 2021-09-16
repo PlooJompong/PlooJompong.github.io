@@ -1,3 +1,8 @@
+/* Variable */
+:root {
+  --clr-white: white;
+}
+
 /* reset */
 * {
   margin: 0;
@@ -10,8 +15,8 @@ html {
 }
 
 body {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
   font-family: "Glory", sans-serif;
   background-color: rgba(244, 173, 97, 0.5);
 }
@@ -23,12 +28,10 @@ body {
 }
 
 h1 {
-  padding-top: 150px;
-  padding-bottom: 50px;
-  margin: auto;
+  padding: 150px 0 50px;
   text-align: center;
   font-size: 6.5rem;
-  color: white;
+  color: var(--clr-white);
 }
 
 form input,
@@ -36,23 +39,23 @@ form button {
   font-size: 2rem;
   border: none;
   outline: none;
-  background: white;
-  padding: 10px;
+  background: var(--clr-white);
+  padding: 13px;
 }
 
 form input {
-  width: 30%;
+  min-width: 30%;
 }
 
 form button {
-  background-color: white;
+  background-color: var(--clr-white);
   color: rgba(244, 173, 97, 1);
 }
 
 form button:hover {
   cursor: pointer;
   background-color: rgba(244, 173, 97, 1);
-  color: white;
+  color: var(--clr-white);
 }
 
 ul {
@@ -64,9 +67,9 @@ ul {
 
 li {
   padding-left: 10px;
-  width: 33%;
+  width: 30%;
   margin-top: 20px;
   list-style: none;
-  font-size: 3rem;
-  background-color: white;
+  font-size: 2.8rem;
+  background-color: var(--clr-white);
 }
