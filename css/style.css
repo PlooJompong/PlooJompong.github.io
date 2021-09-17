@@ -38,6 +38,8 @@ form input,
 form button {
   font-size: 2rem;
   border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
   outline: none;
   background: var(--clr-white);
   padding: 10px;
