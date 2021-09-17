@@ -81,3 +81,15 @@ li {
   font-size: 2.8rem;
   background-color: var(--clr-white);
 }
+
+@media screen and (max-width: 1278px) {
+  li {
+    width: 33%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  li {
+    width: 61%;
+  }
+}
