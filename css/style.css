@@ -3,8 +3,8 @@
   --clr-white: white;
 }
 
--webkit-border-radius: 0;
--moz-border-radius: 0;
+/* -webkit-border-radius: 0;
+-moz-border-radius: 0; */
 
 /* reset */
 * {
@@ -12,9 +12,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-/* -webkit-border-radius: 0;
--moz-border-radius: 0; */
 
 html {
   font-size: 10px;
@@ -44,6 +41,7 @@ form input,
 form button {
   font-size: 2rem;
   border: none;
+  border-radius: 5px;
   outline: none;
   background: var(--clr-white);
   padding: 10px;
@@ -53,12 +51,16 @@ form input {
   min-width: 30%;
 }
 
-form button {
+#add-list {
+  margin-left: 3px;
+}
+
+.btn {
   background-color: var(--clr-white);
   color: rgba(244, 173, 97, 1);
 }
 
-form button:hover {
+.btn:hover {
   cursor: pointer;
   background-color: rgba(244, 173, 97, 1);
   color: var(--clr-white);

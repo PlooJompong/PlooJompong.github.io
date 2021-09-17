@@ -12,14 +12,14 @@ clear.addEventListener("click", remove);
 function newTodo(e) {
   e.preventDefault();
 
-  // Added list item
+  // Add listitem
   const listItem = document.createElement("li");
   listItem.innerText = input.value;
   todoList.appendChild(listItem);
   input.value = "";
 }
 
-// Remove the listitem
+// Remove listitems
 function remove() {
   listItem.className = "li-hidden";
 }
