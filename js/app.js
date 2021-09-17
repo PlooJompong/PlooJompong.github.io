@@ -1,12 +1,13 @@
-// 
+
+// Selectors
 const input = document.getElementById("input");
-const addList = document.getElementById("add-list");
+const addToList = document.getElementById("add-list");
 const todoList = document.getElementById("todo-list");
-const clear = document.getElementById("clear")
+const removeBtn = document.getElementById("remove-button")
 
 // Events
-addList.addEventListener("click", newTodo);
-clear.addEventListener("click", remove);
+addToList.addEventListener("click", newTodo);
+addToList.addEventListener("click", newButton, { once: true });
 
 // Functions
 function newTodo(e) {
@@ -14,12 +15,19 @@ function newTodo(e) {
 
   // Add listitem
   const listItem = document.createElement("li");
-  listItem.innerText = input.value;
-  todoList.appendChild(listItem);
+  if (input.value != "") {
+    listItem.innerText = input.value;
+    todoList.appendChild(listItem);
+  }
   input.value = "";
 }
 
-// Remove listitems
-function remove() {
-  listItem.className = "li-hidden";
+// Create Remove Button
+function newButton() {
+  const button = document.createElement("button");
+  const i = document.createElement("i");
+  removeBtn.appendChild(button);
+  button.setAttribute("class", "btn");
+  button.appendChild(i);
+  i.setAttribute("class", "fas fa-minus-square");
 }
