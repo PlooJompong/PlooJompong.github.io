@@ -32,7 +32,7 @@ function newButton() {
   const button = document.createElement("button");
   const i = document.createElement("i");
   removeBtn.appendChild(button);
-  button.setAttribute("class", "btn");
+  button.setAttribute("class", "btn btn-width");
   button.appendChild(i);
   i.setAttribute("class", "fas fa-minus-square");
 }

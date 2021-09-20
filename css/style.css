@@ -59,6 +59,19 @@ form input {
   color: rgba(244, 173, 97, 1);
 }
 
+#remove-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.btn-width {
+  width: 31.5%;
+  margin-top: 10px;
+}
+
 .btn:hover {
   cursor: pointer;
   background-color: rgba(244, 173, 97, 1);
@@ -74,7 +87,7 @@ ul {
 
 li {
   padding: 5px 10px;
-  margin-top: 20px;
+  margin-top: 15px;
   width: 31.5%;
   border-radius: 3px;
   list-style: none;
@@ -86,10 +99,18 @@ li {
   li {
     width: 33%;
   }
+
+  .btn-width {
+    width: 33%;
+  }
 }
 
 @media screen and (max-width: 500px) {
   li {
+    width: 61%;
+  }
+
+  .btn-width {
     width: 61%;
   }
 }
