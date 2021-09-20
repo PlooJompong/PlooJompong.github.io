@@ -18,7 +18,7 @@ function newTodo(e) {
     listItem.innerText = input.value;
     todoList.appendChild(listItem);
 
-    // Check if remove button is ireated 
+    // Check if remove button is created 
     if (!buttonCreated) {
       newButton();
       buttonCreated = true;
