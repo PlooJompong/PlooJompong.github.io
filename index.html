@@ -20,8 +20,8 @@
       <ul id="nav-ul">
         <li><a href="#">Project</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="#"><i class="fas fa-angry"></i></a></li>
-        <li><a href="#"><i class="fas fa-arrow-alt-circle-down"></i></a></li>
+        <li><span><i id="angry-face" class="fas fa-angry"></i></span></li>
+        <li><span><i class="fas fa-arrow-alt-circle-down"></i></span></li>
       </ul>
     </nav>
   </header>
@@ -34,7 +34,7 @@
     <!-- Input && Add Button -->
     <div class="container">
       <form>
-        <input  id="input" type="text" placeholder="Add task">
+        <input id="input" type="text" placeholder="Add task">
         <button id="add-button" class="btn">
           <i class="fas fa-plus-square"></i>
         </button>
@@ -44,16 +44,19 @@
     <!-- List items -->
     <div class="container">
       <ul id="todo-list">
-        <!-- <li class="task"></li>   -->
+        <div class="todo">
+          <li class="task">hiasd</li>  
+          <span class="delete btn"><i class="fas fa-trash-alt"></i></span>
+        </div>
       </ul>
     </div>
     
     <!-- Remove Button -->
     <div class="container">
       <form id="remove-button">
-        <!-- <button class="btn btn-width"> -->
-          <!-- <i class="fas fa-minus-squar"></i> -->
-        <!-- </button> -->
+        <button class="btn btn-width">
+          <i class="fas fa-minus-squar"></i>
+        </button>
       </form>
     </div>
     

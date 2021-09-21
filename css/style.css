@@ -30,19 +30,8 @@ nav {
   height: auto;
 }
 
-a {
-  padding: 3px;
-  border-radius: 5px;
-  font-size: 4rem;
-  text-decoration: none;
-  color: var(--clr-primary);
-  background-color: var(--clr-white);
-}
-
-a:hover {
-  text-decoration: none;
-  color: var(--clr-white);
-  background-color: var(--clr-primary);
+span:hover {
+  cursor: pointer;
 }
 
 li {
@@ -82,7 +71,24 @@ h1 {
 }
 
 #nav-ul li:last-child {
-  margin-left: 20px;
+  margin-left: 15px;
+}
+
+#nav-ul a,
+#nav-ul span {
+  padding: 3px;
+  border-radius: 5px;
+  font-size: 4rem;
+  text-decoration: none;
+  color: var(--clr-primary);
+  background-color: var(--clr-white);
+}
+
+#nav-ul a:hover,
+#nav-ul span:hover {
+  text-decoration: none;
+  color: var(--clr-white);
+  background-color: var(--clr-primary);
 }
 
 /* Input form */
@@ -126,20 +132,41 @@ input {
   margin-top: 15px;
 }
 
+.delete {
+  font-size: 2rem;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 15px;
+  margin-left: 3px;
+  background-color: var(--clr-white);
+}
+
 /* List Items */
 #todo-list {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+.todo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo span {
+  margin-left: 3px;
+  background-color: var(--clr-white);
 }
 
 .task {
   padding: 5px 10px;
   margin-top: 15px;
   font-size: 2.8rem;
-  background-color: var(--clr-white);
   color: gray;
   border-radius: 5px;
-  min-width: 33.5%;
+  min-width: 29%;
+  background-color: var(--clr-white);
 }
