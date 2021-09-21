@@ -1,12 +1,12 @@
 // Selectors
 const input = document.getElementById("input");
-const addToList = document.getElementById("add-list");
+const addBtn = document.getElementById("add-button");
 const todoList = document.getElementById("todo-list");
 const removeBtn = document.getElementById("remove-button")
 let buttonCreated = false;
 
 // Events
-addToList.addEventListener("click", newTodo);
+addBtn.addEventListener("click", newTodo);
 
 // Functions for EventListener
 function newTodo(e) {
@@ -17,6 +17,7 @@ function newTodo(e) {
   if (input.value != "") {
     listItem.innerText = input.value;
     todoList.appendChild(listItem);
+    listItem.setAttribute("class", "task");
 
     // Check if remove button is created 
     if (!buttonCreated) {
