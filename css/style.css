@@ -126,12 +126,6 @@ input {
   color: var(--clr-white);
 }
 
-.btn-width {
-  width: 33.5%;
-  padding: 5px 10px;
-  margin-top: 15px;
-}
-
 .delete {
   font-size: 2rem;
   border-radius: 5px;
@@ -156,8 +150,9 @@ input {
   justify-content: center;
   align-items: center;
 }
+
 .todo span {
-  margin-left: 3px;
+  margin-left: 4px;
   background-color: var(--clr-white);
 }
 
@@ -167,6 +162,6 @@ input {
   font-size: 2.8rem;
   color: gray;
   border-radius: 5px;
-  min-width: 29%;
+  min-width: 30%;
   background-color: var(--clr-white);
 }
