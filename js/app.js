@@ -11,7 +11,8 @@ angryFace.addEventListener("mouseenter", gladFace);
 
 
 // Functions for EventListener
-function newTodo() {
+function newTodo(e) {
+  e.preventDefault();
   
   // Add listitem
   if (input.value != "") {
