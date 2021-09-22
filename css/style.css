@@ -126,13 +126,12 @@ input {
   color: var(--clr-white);
 }
 
-.delete {
+.delete-btn {
   font-size: 2rem;
   border-radius: 5px;
   padding: 10px;
   margin-top: 15px;
   margin-left: 3px;
-  background-color: var(--clr-white);
 }
 
 /* List Items */
@@ -144,16 +143,20 @@ input {
   justify-content: center;
 }
 
-.todo {
+#todo {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.todo span {
+#todo span {
   margin-left: 4px;
   background-color: var(--clr-white);
+}
+
+#todo span:hover {
+  background-color: var(--clr-primary);
 }
 
 .task {
@@ -164,4 +167,8 @@ input {
   border-radius: 5px;
   min-width: 30%;
   background-color: var(--clr-white);
+}
+
+.fa-trash-alt {
+  pointer-events: none;
 }
