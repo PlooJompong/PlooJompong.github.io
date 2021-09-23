@@ -11,7 +11,6 @@ todoList.addEventListener("click", deleteTask);
 todoList.addEventListener("click", changeColor);
 angryFace.addEventListener("mouseenter", gladFace);
 
-
 // Functions for EventListeners
 // Add Todo
 function newTodo(e) {
