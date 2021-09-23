@@ -22,8 +22,6 @@ function newTodo(e) {
     const li = document.createElement("li");
     const span = document.createElement("span");
     
-    li.innerText = input.value;
-    
     // appendChild
     todoList.appendChild(div);
     div.appendChild(li);
@@ -35,6 +33,8 @@ function newTodo(e) {
     li.setAttribute("class", "task");
     span.setAttribute("id", "remove-btn");
     span.setAttribute("class", "delete-btn btn");
+
+    li.innerText = input.value;
   }
   input.value = "";
 }
@@ -62,18 +62,20 @@ function changeColor(e) {
 // Angry && Gladface
 function gladFace() {
   if (!angry) {
+    angryFace.classList.remove("fa-angry");
     angryFace.classList.add("fa-smile-beam");
     angry = true;
   } else if (angry){
     angryFace.classList.remove("fa-smile-beam");
+    angryFace.classList.add("fa-angry");
     angry = false;
   }
 }
 
 // Try - Catch
 try { 
-  nonExistentFunction();
+  askQuestion();
 }
 catch {
-  console.error("function nonExistentFunction() finns inte");
+  console.error("Bruh!?!?? Function askQuestion finns inte!");
 }
