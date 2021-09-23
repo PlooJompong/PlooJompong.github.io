@@ -70,3 +70,11 @@ function gladFace() {
     angry = false;
   }
 }
+
+// Try - Catch
+try { 
+  nonExistentFunction();
+}
+catch {
+  console.error("function nonExistentFunction() finns inte");
+}
