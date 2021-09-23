@@ -3,18 +3,19 @@ const input = document.getElementById("input");
 const addBtn = document.getElementById("add-button");
 const todoList = document.getElementById("todo-list");
 const angryFace = document.getElementById("angry-face");
+let angry = false;
 
 // EventListeners
 addBtn.addEventListener("click", newTodo);
 todoList.addEventListener("click", deleteTask);
+todoList.addEventListener("click", changeColor);
 angryFace.addEventListener("mouseenter", gladFace);
 
 
-// Functions for EventListener
+// Functions for EventListeners
+// Add Todo
 function newTodo(e) {
   e.preventDefault();
-  
-  // Add listitem
   if (input.value != "") {
     
     // CreateElements
@@ -45,16 +46,27 @@ function deleteTask(e) {
   if (item.classList[0] === "delete-btn") {
     const todo = item.parentElement;
     todo.remove();
-    }
+  }
 }
 
-// FIX GladeFace Funtion !!!!
-
-function gladFace() {
-  if (!angryFace.hasAttribute("fa-angry")) {
-    angryFace.classList.remove("fa-angry");
-    angryFace.classList.add("fa-smile-beam");
-  } else {
-      angryFace.classList.remove("fa-smile-beam");
+// Change li.task Color
+function changeColor(e) {
+  const item = e.target;
+  const list = document.getElementsByClassName("task");
+  if (item.classList[0] === "task") {
+    for (let i = 0; i < list.length; i++) {
+      list[i].style.color = "gray";
     }
+  }
+}
+
+// Angry && Gladface
+function gladFace() {
+  if (!angry) {
+    angryFace.classList.add("fa-smile-beam");
+    angry = true;
+  } else if (angry){
+    angryFace.classList.remove("fa-smile-beam");
+    angry = false;
+  }
 }
