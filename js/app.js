@@ -16,18 +16,18 @@ angryFace.addEventListener("mouseenter", gladFace);
 function newTodo(e) {
   e.preventDefault();
   if (input.value != "") {
-    
+
     // CreateElements
     const div = document.createElement("div");
     const li = document.createElement("li");
     const span = document.createElement("span");
-    
+
     // appendChild
     todoList.appendChild(div);
     div.appendChild(li);
     div.appendChild(span);
     span.innerHTML = '<i class="fas fa-trash-alt"></i>';
-    
+
     // setAttribute
     div.setAttribute("id", "todo");
     li.setAttribute("class", "task");
@@ -40,8 +40,8 @@ function newTodo(e) {
 }
 
 // Delete Button
-function deleteTask(e) {
-  const item = e.target;
+function deleteTask(c) {
+  const item = c.target;
   if (item.classList[0] === "delete-btn") {
     const todo = item.parentElement;
     todo.remove();
@@ -49,8 +49,8 @@ function deleteTask(e) {
 }
 
 // Change li.task Color
-function changeColor(e) {
-  const item = e.target;
+function changeColor(c) {
+  const item = c.target;
   const list = document.getElementsByClassName("task");
   if (item.classList[0] === "task") {
     for (let i = 0; i < list.length; i++) {
@@ -65,7 +65,7 @@ function gladFace() {
     angryFace.classList.remove("fa-angry");
     angryFace.classList.add("fa-smile-beam");
     angry = true;
-  } else if (angry){
+  } else if (angry) {
     angryFace.classList.remove("fa-smile-beam");
     angryFace.classList.add("fa-angry");
     angry = false;
@@ -73,7 +73,7 @@ function gladFace() {
 }
 
 // Try - Catch
-try { 
+try {
   askQuestion();
 }
 catch {
