@@ -1,60 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Glory&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <title>TODO LIST</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Glory&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">    
-  <link href="css/style.css" rel="stylesheet" type="text/css">
-  <title>TODO LIST</title>
-</head>
+  <body>
+    <header>
+      <nav>
+        <ul id="nav-ul">
+          <li><a href="#">Project</a></li>
+          <li><a href="#">About</a></li>
+          <li>
+            <span><i id="angry-face" class="fas fa-angry"></i></span>
+          </li>
+          <li>
+            <span>
+              <a
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+                target="_blank"
+                ><i class="fas fa-question-circle"></i>
+              </a>
+            </span>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-  <header>
-    <nav>
-      <ul id="nav-ul">
-        <li><a href="#">Project</a></li>
-        <li><a href="#">About</a></li>
-        <li><span><i id="angry-face" class="fas fa-angry"></i></span></li>
-        <li><span><i class="fas fa-question-circle"></i></span></li>
-      </ul>
-    </nav>
-  </header>
+    <main>
+      <div class="container">
+        <h1>TODO LIST</h1>
+      </div>
 
-  <main>
-    <div class="container">
-      <h1>TODO LIST</h1>
-    </div>
-    
-    <!-- Input && Add Button -->
-    <div class="container">
-      <form>
-        <input id="input" type="text" placeholder="Add task">
-        <button id="add-button" class="btn">
-          <i class="fas fa-plus-square"></i>
-        </button>
-      </form>
-    </div>
+      <!-- Input && Add Button -->
+      <div class="container">
+        <form>
+          <input id="input" type="text" placeholder="Add task" />
+          <button id="add-button" class="btn">
+            <i class="fas fa-plus-square"></i>
+          </button>
+        </form>
+      </div>
 
-    <!-- List items -->
-    <div class="container">
-      <ul id="todo-list">      
-        <!-- <div id="todo">
+      <!-- List items -->
+      <div class="container">
+        <ul id="todo-list">
+          <!-- <div id="todo">
           <li class="task"></li>  
           <span id="remove-btn" class="delete-btn btn"><i class="fas fa-trash-alt"></i></span>
-        </div> -->    
-      </ul>
-    </div>
-    
-    <footer>
-      <script src="./js/app.js"></script>
-    </footer>
-  </main>
-</body>
+        </div> -->
+        </ul>
+      </div>
 
+      <footer>
+        <script src="./js/app.js"></script>
+      </footer>
+    </main>
+  </body>
 </html>
